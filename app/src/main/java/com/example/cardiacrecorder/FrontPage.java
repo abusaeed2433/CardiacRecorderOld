@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.WindowManager;
 
 import com.example.cardiacrecorder.databinding.ActivityFrontPageBinding;
 
@@ -15,6 +16,10 @@ public class FrontPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         super.onCreate(savedInstanceState);
         binding = ActivityFrontPageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

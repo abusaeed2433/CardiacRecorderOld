@@ -1,4 +1,4 @@
-name: Build Project
+name: Unit Test
 run-name: ${{ github.actor }} running all unit test...
 
 on:

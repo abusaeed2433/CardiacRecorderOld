@@ -1,0 +1,13 @@
+language: java
+
+jobs:
+  include:
+    - name: Build Project
+      script:
+        - chmod +x ./gradlew
+        - ./gradlew build
+
+# Configure branches for triggering the build
+branches:
+  only:
+    - main

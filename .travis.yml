@@ -10,4 +10,4 @@ jobs:
 # Configure branches for triggering the build
 branches:
   only:
-    - main
+    - master

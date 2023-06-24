@@ -3,7 +3,7 @@ name: Deploy Javadoc
 on:
   push:
     branches:
-      - master
+      - saeed
 
 jobs:
   publish:
@@ -13,7 +13,7 @@ jobs:
         uses: MathieuSoysal/Javadoc-publisher.yml@v2.4.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          javadoc-branch: master
-          java-version: 11
-#           target-folder: javadoc 
+          javadoc-branch: javadoc
+          java-version: 17
+          target-folder: javadoc 
           project: gradle

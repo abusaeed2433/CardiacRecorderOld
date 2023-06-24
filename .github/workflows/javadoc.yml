@@ -3,7 +3,7 @@ name: Deploy Javadoc
 on:
   push:
     branches:
-      - master
+      - unit-test
 
 jobs:
   publish:
@@ -15,5 +15,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           javadoc-branch: master
           java-version: 11
-          target-folder: javadoc 
+#           target-folder: javadoc 
           project: gradle
